@@ -11,6 +11,7 @@ CreateThread(function()
             street = GetStreetNameFromHashKey(street),
             street2 = GetStreetNameFromHashKey(street2),
             active = streetactive,
+            inpauemenu = IsPauseMenuActive()
         })
         Wait(500)
     end

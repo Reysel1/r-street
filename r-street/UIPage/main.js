@@ -1,7 +1,7 @@
 $(() => {
     window.addEventListener('message', (event) => {
         let v = event.data
-        if (v.active == true) {
+        if (v.active == true && v.inpauemenu == false) {
             $('.street').fadeIn(500)
             if (v.street2 == 0) {
                 $('.street').html(v.street)
